@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #A9B5DF;
+}
+
+.container {
+    display: flex;
+    /*align-items: center;*/
+    flex-direction: column;
+    min-width: 350px;
+    max-width: 700px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    /*background: #fff;*/
+
+}
+
+.tasks, .form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #A9B5DF;
+    border-radius: .8em;
+    background: #2D336B;
+
+}
+
+.form {
+    /*justify-content: space-between;*/
+    height: 5.5em;
+}
+
+#task, #addTask {
+    outline: none;
+    border: none;
+}
+
+#task {
+    /*flex: 1;*/
+    font-weight: 500;
+    height: 50%;
+    width: 80%;
+    margin: 0 30px;
+    border: none;
+    border-radius: .6em;
+    font-size: 1em;
+    padding: 0 10px;
+    /*background: transparent;*/
+}
+
+#addTask {
+    /*flex: 0 0 4em;*/
+    height: 55%;
+    width: 5.5em;
+    border: none;
+    border-radius: .6em;
+    background: #7886C7;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+#addTask:hover{
+    background: #4c54ca;
+}
+.tasks {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+#tasksList {
+    list-style-type: none;
+    border-radius: 1em;
+    padding: 20px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#tasksList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+
+    border-radius: .8em;
+    border: 1px solid #A9B5DF;
+
+    background: #fff;
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 400;
+
+    transition: background .2s ease-in-out;
+}
+.no{
+    background: #2D336B !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+#tasksList li:hover {
+    background: #f1f1f1;
+}
+
+.dle {
+    width: 3em;
+    height: 1.4em;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 2px;
+    font-weight: bold;
+    background-color: rgba(228, 24, 24, 0.88);
+    transition: background .2s ease-in-out;
+    cursor: pointer;
+}
+
+.dle:hover {
+    background-color: rgb(143, 52, 52);
+}
